@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Test</title>
+  <script src="assets/snake.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <div id="main">
+  </div>
+    <div id="h-gameover">
+      <a style="font-size: xx-large; font-weight: bold;">Game Over</a><br>
+      <a style="font-size: large; font-weight: bolder;">better luck next time?</a>
+    </div>
+</body>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const w = urlParams.get('w') || 25;
+  const h = urlParams.get('h') || 25;
+  const s = urlParams.get('s') || 15;
+
+  const game = new Game(w, h, s);
+</script>

@@ -1,0 +1,15 @@
+* {
+  background-color: rgb(37, 37, 37);
+}
+
+#h-gameover {
+  visibility: hidden;
+  height: 0px;
+  color: white
+}
+
+#main {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+}
